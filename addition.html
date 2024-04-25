@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition of two numbers</title>
+    <!--css code for style-->
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+           background-color: honeydew;
+        }
+        h1{
+            position: absolute;
+            font-size: 35px;
+            left:45%;
+            top:40px;
+            color: darkmagenta;
+        }
+        header{
+            position: relative;
+            left:35%;
+            margin-top: 15%;
+            
+        }
+        header .one{
+            
+            margin:20px;
+            font-size: 30px;
+        }
+        header .one #num1{
+            position: relative;
+            padding: 10px;
+            left:40px;
+            font-weight: bolder;
+            border: none;
+            box-shadow: 3px 3px 3px rgb(176,176,175);
+            border-radius: 5px;
+            font-size: 20px;
+        } 
+        header .two{
+            position: relative;
+            margin:20px;
+            font-size: 30px;
+            top: 20px;
+        }
+        header .two #num2{
+            position: relative;
+            padding: 10px;
+            left:10px;
+            font-weight: bolder;
+            border: none;
+            box-shadow: 3px 3px 3px rgb(176,176,175);
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        header .three{
+            position: relative;
+            left:5%;
+            margin:30px;
+            top:20px;
+            
+        }
+        .three button{
+            padding: 10px 10%;
+            background-color: deeppink;
+            color: white;
+        }
+        .three button:hover{
+            background-color: cyan;
+            color: red;
+        }
+        header .four{
+            position: relative;
+            margin:20px;
+            left: 12%;
+            top:20px;
+        }
+        .four #ans{
+            padding: 10px 30px;
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+        <!--html code-->
+        <h1>ADDITION</h1>
+        <header>
+        <div class="one">
+        <label>Enter First Number</label>
+        <input id="num1"><br>
+        </div>
+
+        <div class="two">
+            <label>Enter Second Number</label>
+            <input id="num2"><br>
+        </div>
+        
+
+        <div class="three">
+            <button onclick="addition()">Add</button><br>
+        </div>
+
+       <div class="four">
+         <label id="ans">Result</label>  
+       </div> 
+       </header>
+
+        <!--javascript to perform addition-->
+        <script>
+            var number1=document.getElementById("num1");
+            var number2=document.getElementById("num2");
+            var answer=document.getElementById("ans");
+            function addition()
+            {
+                var num1value=Number(number1.value);
+                var num2value=Number(number2.value);
+                var total=num1value+num2value;
+               answer.textContent=total;
+            }
+            
+            </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
